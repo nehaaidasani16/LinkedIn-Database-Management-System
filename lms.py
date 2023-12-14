@@ -365,7 +365,7 @@ def connect_database():
     def connect():
         global mycursor, lms1
         try:
-            lms1=pymysql.connect(host=hostEntry.get(),user=usernameEntry.get(),password='mySQL@2112')
+            lms1=pymysql.connect(host=hostEntry.get(),user=usernameEntry.get(),password=passwordEntry.get())
             mycursor=lms1.cursor()
 
         except:
